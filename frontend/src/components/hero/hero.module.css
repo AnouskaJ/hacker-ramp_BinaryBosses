@@ -1,0 +1,219 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    padding: 5rem 5rem 6rem;
+}
+
+.wrapper{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    position: relative;
+}
+
+.heroImg{
+    position: absolute;
+    width: 27rem;
+    top: -1rem;
+}
+
+.heroSwirlImg{
+    position: absolute;
+    top: -8.5rem;
+    left: 2rem;
+    width: 43rem;
+}
+
+.coloredCircle{
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    z-index: -99;
+    position: absolute;
+    top: -5rem;
+    background: linear-gradient(#D1DDA4, #F5D7A0, #F6C0A7, #F7C6CD, #EEC0DD);
+}
+
+.cart2{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: -15%;
+    gap: 1rem;
+}
+.cart2 > svg {
+    padding: 0.625rem;
+    width: 1.875rem;
+    height: 1.875rem;
+    background: #fff;
+    border-radius: 50%;
+    border: 6px solid var(--black);
+}
+
+.signup{
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    padding: 0.938rem;
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 0.625rem;
+    font-size: 0.9rem;
+    box-shadow: var(--shadow1);
+}
+.signup > :first-child{
+    display: block;
+    width: 6rem;
+}
+.signup > :nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 2px solid #000;
+    border-radius: 50%;
+}
+.signup:hover{
+    color: #fff;
+    background-color: var(--black);
+}
+.signup > :nth-child(2):hover{
+    border: 2px solid #fff;
+}
+
+.h_sides{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.text1{
+    display: block;
+    width: min-content;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.text2{
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    color: #000;
+}
+.text2 > :first-child{
+    font-weight: 800;
+    font-size: 3rem;
+}
+.text2 > :nth-child(2){
+    display: block;
+}
+
+.traffic{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+.traffic > :first-child{
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.customers{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+.customers > :first-child{
+    font-weight: 700;
+    text-align: right;
+    font-size: 3rem;
+}
+
+@media screen and (max-width: 856px) {
+    .text, .text2 > span:nth-of-type(2){
+        text-align: justify;
+        font-size: 0.9rem;
+    }
+
+    .text2 > span:nth-of-type(1),
+    .traffic > span:nth-child(1),
+    .customers > span:nth-child(1){
+        text-align: left;
+        font-size: 1.5rem;
+    }
+
+    .coloredCircle{
+        position: absolute;
+        width: 70%;
+        height: 97%;
+        left: 7rem;
+        top: -2rem !important;
+    }
+
+    .heroImg {
+        position: absolute;
+        width: 65%;
+        height: 81%;
+        top: 8% !important;
+        right: 10% !important;
+    }
+
+    .heroSwirlImg {
+        position: absolute;
+        width: 104%;
+        height: 114%;
+        top: -7%;
+        left: 4.5%;
+    }
+
+    .cart2{
+        transform: scale(0.8);
+        right: -7% !important;
+        top: 45%;
+    }
+
+    .container{
+        grid-template-areas: 'left center center'
+                                'right right right';
+        padding: 2rem 5rem 3rem;
+    }
+
+    .container > :first-child{
+        grid-area: left;
+        grid-template-rows: none;
+        gap: 8rem;
+    }
+
+    .container > :nth-child(2){
+        grid-area: center;
+    }
+
+    .container > :nth-child(3){
+        display: flex;
+        justify-content: space-around;
+        grid-area: right;
+        margin: 3rem 0rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .coloredCircle{
+        top: 0;
+        width: 16rem;
+        height: 72%;
+    }
+
+    .wrapper > img{
+        top: 3rem;
+        width: 12rem;
+        height: 15rem;
+    }
+
+    .cart2{
+        transform: scale(.7);
+        right: -2rem;
+        bottom: 0;
+    }
+}
+
