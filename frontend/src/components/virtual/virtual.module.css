@@ -1,0 +1,64 @@
+.virtual{
+    display: flex;
+    justify-content: space-around;
+    padding: 6rem 7rem 4rem;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 2rem;
+}
+.left > :nth-child(1){
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.left > :nth-child(2){
+    display: block;
+    width: 20rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+.left > :nth-child(3){
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.left > img{
+    position: absolute;
+    width: 10rem;
+    bottom: 3.3rem;
+}
+
+.wrapper{
+    width: 30rem;
+    border: 2px solid #000;
+    border-radius: 1.2em;
+}
+
+@media screen and (max-width: 856px) {
+    .virtual{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 2rem;
+        margin-top: 5rem;
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+    .left > img{
+        position: absolute;
+        width: 10rem;
+        left: 5rem;
+        bottom: 2.5rem;
+    }
+    .left{
+        padding-bottom: 4rem;
+    }
+}
+
+
+
