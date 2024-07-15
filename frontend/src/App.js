@@ -9,6 +9,7 @@ import Products from "./components/products/Products";
 import Testimonials from "./components/testimonials/Testimonials";
 import Footer from "./components/footer/Footer";
 import UploadPage from "./components/uploadPage/UploadPage"; 
+import ProductPage from './components/ProductPage/ProductPage';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             }
           />
           <Route path="/upload" element={<UploadPage />} />
+          <Route path="/product" element={<ProductPage />} />
         </Routes>
         <Footer />
       </div>

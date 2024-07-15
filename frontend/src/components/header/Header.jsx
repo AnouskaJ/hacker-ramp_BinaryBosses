@@ -10,6 +10,10 @@ const Header = () => {
     setShowMenu((showMenu) => !showMenu);
   };
 
+  const handleProductClick = () => {
+    navigate('/product'); 
+  };
+
   return (
     <div className={css.container}>
       <div className={css.logo}>
@@ -22,7 +26,7 @@ const Header = () => {
         </div>
         <div className={css.menu} style={{display: showMenu? 'inherit': 'none'}}>
           <ul className={css.menu}>
-            <li className='cat1'>Trending</li>
+            <li className='cat1' onClick={handleProductClick}>Product</li>
             <li className='cat2'>About Brands</li>
             <li className='cat3'>Sustainable</li>
             <li className='cat4'>Category</li>
@@ -35,5 +39,4 @@ const Header = () => {
     </div>
   );
 }
-
 export default Header;
