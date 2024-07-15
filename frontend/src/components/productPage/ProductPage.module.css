@@ -1,0 +1,140 @@
+/* ProductPage.module.css */
+
+.product-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-display {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .product-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 50%;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .product-info {
+    width: 50%;
+  }
+  
+  h1 {
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+  
+  .price {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #e91e63;
+  }
+  
+  .sustainability {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+  }
+  
+  .description {
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .add-to-cart {
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+  
+  .social-share {
+    margin-top: 20px;
+  }
+  
+  .social-button {
+    background-color: #3b5998;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 4px;
+  }
+  
+  .related-products {
+    margin-top: 40px;
+  }
+  
+  .related-products h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .related-products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .related-product {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .related-product:hover {
+    transform: translateY(-5px);
+  }
+  
+  .related-product img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .related-product-name {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .related-product-price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #e91e63;
+  }
+  
+
+  
