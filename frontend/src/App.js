@@ -9,7 +9,7 @@ import Products from "./components/products/Products";
 import Testimonials from "./components/testimonials/Testimonials";
 import Footer from "./components/footer/Footer";
 import UploadPage from "./components/uploadPage/UploadPage"; 
-import ProductPage from './components/ProductPage/ProductPage';
+import ProductPage from './components/productPage/ProductPage';
 
 function App() {
   return (

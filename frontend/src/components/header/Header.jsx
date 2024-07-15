@@ -2,10 +2,12 @@ import { React, useState } from 'react';
 import css from './header.module.css';
 import Logo from '../../assets/logo.png';
 import { FiShoppingBag, FiMenu } from 'react-icons/fi';
+import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(true);
-
+  const navigate = useNavigate(); // Initialize useNavigate
+  
   const toggleMenu = () => {
     setShowMenu((showMenu) => !showMenu);
   };
